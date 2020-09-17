@@ -1,0 +1,26 @@
+자료구조를 구현하거나 활용해서 하는것 시험
+
+collision is important
+
+Hashing! map a key to some index
+similar with dictionary
+collision일어나면 slot에 채움
+overflow: slot이 다 찼을때
+
+key가 들어가게되면(input), hashes를 output한다.
+uniform distribution
+
+output이 uniform해야
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+while False in visited:
+        # Step 3: check each vertex for having shortest path
+        min_dist = float('inf')
+        min_pos = -1
+
+        for j in range(size):
+            if (visited[j] is False) and (distance[j] < min_dist):
+                min_dist = distance[j]
+                min_pos = j
+
+        visited[min_pos] = True # mark the minimal distance vertex as being visited
+        
+        # Step 4: for each vertex not in visited array, update its shortest path
+        for k in range(size): 
+            if visited[k] is False:
+                if (distance[min_pos] + weight[min_pos][k]) < distance[k]:
+                    distance[k] = distance[min_pos] + weight[min_pos][k]
+            
+    return distance
